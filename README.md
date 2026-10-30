@@ -164,3 +164,9 @@ Whisper's code and model weights are released under the MIT License. See [LICENS
 This repository contains the upstream Whisper speech-recognition implementation. Follow the upstream documentation for installation, model selection, language options, and audio preprocessing. When evaluating transcription quality, use a representative set of audio clips and compare transcripts against verified references; document the model size, language setting, and decoding options.
 
 Transcripts may contain recognition errors, especially with background noise, accents, overlapping speakers, and domain-specific vocabulary. Review important transcripts manually and obtain permission before processing private recordings. Preserve upstream attribution and licensing when sharing modifications.
+
+## Project Development Notes
+
+Evaluate transcription quality using a representative audio set and document language, noise conditions, model size, and decoding options. Obtain permission before processing recordings.
+
+For reproducibility, record source versions, environment and dependency versions, configuration, and actual test outputs. Clearly label sample data and illustrative results; never commit secrets or private data.
