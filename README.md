@@ -170,3 +170,9 @@ Transcripts may contain recognition errors, especially with background noise, ac
 Evaluate transcription quality using a representative audio set and document language, noise conditions, model size, and decoding options. Obtain permission before processing recordings.
 
 For reproducibility, record source versions, environment and dependency versions, configuration, and actual test outputs. Clearly label sample data and illustrative results; never commit secrets or private data.
+
+### Technical Deep Dive
+
+Whisper converts audio into log-Mel features and uses an encoder-decoder Transformer to predict task and text tokens. The chosen model size, language hint, decoding options, audio duration, and hardware all affect latency and transcription quality. For multilingual transcription, select a multilingual checkpoint and distinguish transcription in the original language from translation into English.
+
+Suggested engineering checks: evaluate Word Error Rate (WER) against verified transcripts, test accents/noisy audio and long recordings, record model and decoding settings, and obtain permission before processing private audio. This is an upstream implementation; retain its license and attribution.
