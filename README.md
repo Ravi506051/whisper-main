@@ -158,3 +158,9 @@ Please use the [🙌 Show and tell](https://github.com/openai/whisper/discussion
 ## License
 
 Whisper's code and model weights are released under the MIT License. See [LICENSE](https://github.com/openai/whisper/blob/main/LICENSE) for further details.
+
+## Local Usage and Evaluation Notes
+
+This repository contains the upstream Whisper speech-recognition implementation. Follow the upstream documentation for installation, model selection, language options, and audio preprocessing. When evaluating transcription quality, use a representative set of audio clips and compare transcripts against verified references; document the model size, language setting, and decoding options.
+
+Transcripts may contain recognition errors, especially with background noise, accents, overlapping speakers, and domain-specific vocabulary. Review important transcripts manually and obtain permission before processing private recordings. Preserve upstream attribution and licensing when sharing modifications.
