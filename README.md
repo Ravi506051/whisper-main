@@ -176,3 +176,9 @@ For reproducibility, record source versions, environment and dependency versions
 Whisper converts audio into log-Mel features and uses an encoder-decoder Transformer to predict task and text tokens. The chosen model size, language hint, decoding options, audio duration, and hardware all affect latency and transcription quality. For multilingual transcription, select a multilingual checkpoint and distinguish transcription in the original language from translation into English.
 
 Suggested engineering checks: evaluate Word Error Rate (WER) against verified transcripts, test accents/noisy audio and long recordings, record model and decoding settings, and obtain permission before processing private audio. This is an upstream implementation; retain its license and attribution.
+
+## Speech Recognition Evaluation Notes
+
+For experiments using Whisper, document the model size, language/task settings, audio sample rate, decoding options, and hardware used. Evaluate on audio that reflects the intended environment, including different accents, speaking rates, background noise, and recording quality.
+
+Where reference transcripts are available, report Word Error Rate (WER) and explain the evaluation dataset and normalization rules. Review transcription output before using it for legal, medical, or other high-impact decisions. Obtain consent before recording people and protect audio files and transcripts that may contain personal information.
