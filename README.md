@@ -182,3 +182,11 @@ Suggested engineering checks: evaluate Word Error Rate (WER) against verified tr
 For experiments using Whisper, document the model size, language/task settings, audio sample rate, decoding options, and hardware used. Evaluate on audio that reflects the intended environment, including different accents, speaking rates, background noise, and recording quality.
 
 Where reference transcripts are available, report Word Error Rate (WER) and explain the evaluation dataset and normalization rules. Review transcription output before using it for legal, medical, or other high-impact decisions. Obtain consent before recording people and protect audio files and transcripts that may contain personal information.
+
+## Speech Recognition Evaluation Notes
+
+- Document the audio sample rate, channel count, supported languages, and preprocessing applied before transcription.
+- Evaluate transcription quality with word error rate (WER) on a representative, manually verified test set.
+- Test accents, background noise, overlapping speech, and different recording devices.
+- Preserve timestamps and segment metadata when the application uses time-aligned transcripts.
+- Treat transcripts as potentially sensitive data and avoid storing recordings or credentials unnecessarily.
