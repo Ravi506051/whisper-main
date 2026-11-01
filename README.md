@@ -190,3 +190,9 @@ Where reference transcripts are available, report Word Error Rate (WER) and expl
 - Test accents, background noise, overlapping speech, and different recording devices.
 - Preserve timestamps and segment metadata when the application uses time-aligned transcripts.
 - Treat transcripts as potentially sensitive data and avoid storing recordings or credentials unnecessarily.
+
+## Local Experiment Notes
+
+This repository contains OpenAI's original Whisper implementation. Preserve upstream attribution, model-card guidance, and license terms when experimenting with this code.
+
+For transcription evaluations, record the model size, language/task settings, audio sample rate, and decoding options. Compare transcripts against a verified reference using word error rate (WER), and test varied accents, background noise, silence, and long recordings. Avoid storing or publishing private audio without permission.
