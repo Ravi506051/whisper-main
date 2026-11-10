@@ -196,3 +196,12 @@ Where reference transcripts are available, report Word Error Rate (WER) and expl
 This repository contains OpenAI's original Whisper implementation. Preserve upstream attribution, model-card guidance, and license terms when experimenting with this code.
 
 For transcription evaluations, record the model size, language/task settings, audio sample rate, and decoding options. Compare transcripts against a verified reference using word error rate (WER), and test varied accents, background noise, silence, and long recordings. Avoid storing or publishing private audio without permission.
+
+## Practical Evaluation Notes
+
+This repository contains OpenAI Whisper. These notes are intended for experimentation and evaluation and do not claim authorship of the upstream model.
+
+- Record the model size, language setting, decoding options, and audio preprocessing used for each experiment.
+- Evaluate transcription quality with representative audio and a clearly defined reference transcript.
+- Test accents, background noise, overlapping speakers, and domain-specific vocabulary.
+- Review generated transcripts before using them as authoritative records, and preserve upstream attribution and license terms.
